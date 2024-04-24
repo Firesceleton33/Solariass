@@ -1,0 +1,401 @@
+body{
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+div{
+    box-sizing: border-box;
+    display: block;
+}
+
+div.options{
+    flex-grow: 1;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+div.header{
+    z-index: 3;
+    position: sticky;
+    overflow: visible;
+    top: 0;
+}
+
+.btn_avatar{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.name_avatar{
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 17px;
+}
+
+.input_title{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.88);
+    min-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.5s ease 0s;
+    padding: 7px 11px;
+    line-height: 1.5;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin-left: 5%;
+}
+
+div.save_status{
+    margin-left: 3%; 
+    margin-right: 50%;
+}
+
+button.btn_duplicate, button.btn_export, button.btn_share, button.btn_save{
+    border: 1px solid transparent;
+    background: transparent;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+
+.center{
+    height: 64px;
+    padding: 16px 24px;
+    max-width: initial;
+    margin: initial;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+div.workspace{
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+div.outline,div.produce,div.rewrite,div.reorder{
+    height: calc(35px);
+    width: calc(35px);
+    margin-left: calc(12px);
+    align-items: center;
+    color: rgba(0, 0, 0, 0.88);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+div.phases{
+    position: fixed;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(217, 217, 217);
+    border-radius: 12px;
+    border: 3px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+div.funcion_screen{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    padding: 24px;
+    overflow-x: hidden;
+    height: calc(100vh - 113px);
+    overflow: scroll;
+    position: fixed;
+    transition: width 0.3s ease 0s;
+    width: 100%;
+    z-index: 2;
+    margin-left: 72px;
+    max-width: 500px;
+    min-width: 500px;
+}
+
+.funcion_buttons{
+    display: flex;
+}
+
+article{
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 28px;
+}
+
+.btn_topic1{
+    color: #fff;
+    background-color: #1ab586;
+    box-shadow: 0 2px 0 rgba(5, 155, 85, 0.1);
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 4px;
+    outline: none;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    user-select: none;
+    touch-action: manipulation;
+    line-height: 1.5714285714285714;
+}
+
+.btn_topic2{
+    width: 24px;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    font-size: 14px;
+    height: 24px;
+    /* padding: 0px 7px; */
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding-top: 5px;
+    margin-left: 50%;
+    font-size: 20px;
+}
+
+
+.icon_btn_topic2{
+    box-sizing: border-box;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+div.page{
+    margin-left: 650px;
+}
+
+div.blank_page{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    color: rgba(0, 0, 0, 0.88);
+    z-index: 2;
+    max-width: 816px;
+    padding: 90px 70px;
+    transition: margin-left 0.3s ease 0s, opacity 0.3s ease 0s;
+    overflow-wrap: break-word;
+    min-height: 100vh !important;
+}
+
+div.blank_page_center{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+div.outline_topic_block{
+    font-size: 12pt;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    outline: 0px;
+    padding-left: 11px !important;
+    margin-left: -11px !important;
+    padding: 0.4em 0;
+}
+
+
+hr.separator{
+    margin: 16px -24px 20px;
+    min-width: 100%;
+    width: unset;
+    display: flex;
+    clear: both;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    border-block-start: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+div.Box{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 4px;
+    box-shadow: rgba(14, 16, 21, 0.05) 0px 1px 4px;
+    min-height: 45px;
+    position: relative;
+}
+
+div.Outline_title{
+    align-items: center;
+    cursor: grab;
+    display: flex;
+    padding: 16px;
+    transition: background-color 0.5s ease 0s !important;
+    touch-action: manipulation;
+}
+
+
+
+
+button.btn_outline_edit, button.btn_outline_more{
+    width: 24px;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    font-size: 20px;
+    height: 24px;
+    padding: 0px 7px;
+    border-radius: 2px;
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;    
+    outline: none;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+
+div.Outline_Buttons{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    margin-left: 20%;
+}
+
+div.outline_holder{
+    outline: 0px;
+}
+
+
+input.Outline_Title{
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 28px;
+    min-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.5s ease 0s;
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+}
+
+.Outline_title_essay{
+    outline: 0px;
+}
+
+
+.Outline_title_essay > p:first-child {
+    font-size: 22px;
+    font-family: "Courier Prime", monospace;
+}
+
+.hidden {
+    display: none;
+  }
+
+div.phases button{
+    height: 35px;
+    width: 35px;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+ul.Synonyms{
+    min-height: 144px;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 25px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.chat-body {
+    padding: 10px;
+}
+
+.chat-text {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.user-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #3e8e41;
+}
+.chat-text {
+    height: 300px;
+    overflow: auto;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+  
+.user-message {
+    color: #555;
+    text-align: end;
+    margin-bottom: 10px;
+}
+  
+.ai-message {
+    color: #008CBA;
+    margin-bottom: 10px;
+}
